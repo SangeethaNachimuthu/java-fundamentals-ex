@@ -19,6 +19,8 @@ public class Exercise {
         getAndDisplayUserName();    //Exercise 5
 
         performArithmeticOperations();  //Exercise 6
+
+        convertToSeconds();     //Exercise 7
     }
     /*
     Exercise 2: Get a year as input and print if is a leap year or not.
@@ -88,5 +90,21 @@ public class Exercise {
          System.out.println("Subtraction : " +a+ "-" +b+ "=" +(a-b));
          System.out.println("Multiplication : " +a+ "*" +b+ "=" +(a*b));
          System.out.println("Division : " +a+ "/" +b+ "=" +(a/b));
+    }
+
+    /*
+    Exercise 7: Convert seconds to hours, minutes and seconds
+     */
+    public static void convertToSeconds() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter time in seconds: ");
+        int seconds = scan.nextInt();
+
+        int hr = seconds/3600;
+        int min = (seconds/60) % 60;
+        int sec = seconds % 60;
+
+        //Used 'printf' to print formatted output.
+        System.out.printf("%02d:%02d:%02d", hr, min, sec);
     }
 }
