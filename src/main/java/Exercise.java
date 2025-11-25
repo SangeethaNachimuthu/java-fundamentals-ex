@@ -21,6 +21,8 @@ public class Exercise {
         performArithmeticOperations();  //Exercise 6
 
         convertToSeconds();     //Exercise 7
+
+        generateRandomNo();     //Exercise 8
     }
     /*
     Exercise 2: Get a year as input and print if is a leap year or not.
@@ -106,5 +108,33 @@ public class Exercise {
 
         //Used 'printf' to print formatted output.
         System.out.printf("%02d:%02d:%02d", hr, min, sec);
+    }
+
+    /*
+    Exercise 8: Generate random number, let the user guess the number,
+        run the program until the correct guess and print the no of attempt
+        with correct guess message. Also display 'Guess is small / big' message
+        based on the random number.
+     */
+    public static void generateRandomNo() {
+        int ranNumber = (int) (Math.random() * 501)+1;
+        System.out.println(ranNumber);
+        int guessNum;
+        int noOfAtt=0;
+        Scanner scan = new Scanner(System.in);
+        do {
+            System.out.println("Guess the random number: ");
+            guessNum = scan.nextInt();
+            noOfAtt++;
+            if(guessNum > ranNumber) {
+                System.out.println("Your guess was too big.");
+            } else if (guessNum < ranNumber) {
+                System.out.println("Your guess was too small.");
+            }
+        }
+        while(guessNum != ranNumber);
+        if(guessNum == ranNumber) {
+            System.out.println("Your guess is correct on " +noOfAtt+ " attempt.");
+        }
     }
 }
