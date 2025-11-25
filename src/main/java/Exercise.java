@@ -17,6 +17,8 @@ public class Exercise {
         findAverage();      //Exercise 4
 
         getAndDisplayUserName();    //Exercise 5
+
+        performArithmeticOperations();  //Exercise 6
     }
     /*
     Exercise 2: Get a year as input and print if is a leap year or not.
@@ -69,5 +71,22 @@ public class Exercise {
         Scanner scan = new Scanner(System.in);
         String userName = scan.next();
         System.out.println("Hello "+userName);
+    }
+
+    /*
+    Exercise 6: Get 2 inputs from user and perform Arithmetic Operations
+     */
+    public static void performArithmeticOperations() {
+
+         Scanner scan = new Scanner(System.in);
+         System.out.println("Enter number A: ");
+         int a = scan.nextInt();
+         System.out.println("Enter number B: ");
+         int b = scan.nextInt();
+
+         System.out.println("Addition : " +a+ "+" +b+ "=" +(a+b));
+         System.out.println("Subtraction : " +a+ "-" +b+ "=" +(a-b));
+         System.out.println("Multiplication : " +a+ "*" +b+ "=" +(a*b));
+         System.out.println("Division : " +a+ "/" +b+ "=" +(a/b));
     }
 }
