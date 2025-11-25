@@ -12,6 +12,8 @@ public class Exercise {
 
         leapYear();    //Exercise 2
 
+        arithmeticOperations();     //Exercise 3
+
 
     }
     /*
@@ -27,5 +29,16 @@ public class Exercise {
          else {
              System.out.println("The " + year + " is not a leap year.");
          }
+    }
+
+    /*
+    Exercise 3: Arithmetic Operations
+     */
+    public static void arithmeticOperations(){
+        System.out.println("Arithmetic Operations:");
+        System.out.println("Addition of 46+12 = "+(46+12));
+        System.out.println("Subtraction of 56-13 = "+(56-13));
+        System.out.println("Multiplication of 13*5 = "+(13*5));
+        System.out.println("Division of 25/7 = "+(25/7));
     }
 }
