@@ -31,10 +31,11 @@ public class Exercise {
          System.out.println("Enter the year: ");
          Scanner scanner = new Scanner(System.in);
          int year = scanner.nextInt();
-         if (year % 4 == 0){
+         if (year % 400 == 0){
              System.out.println("The "+ year + " is a leap year.");
-         }
-         else {
+         } else if (year % 4 == 0 && year % 100 != 0) {
+              System.out.println("The "+ year + " is a leap year.");
+         } else {
              System.out.println("The " + year + " is not a leap year.");
          }
     }
@@ -117,13 +118,13 @@ public class Exercise {
         based on the random number.
      */
     public static void generateRandomNo() {
-        int ranNumber = (int) (Math.random() * 501)+1;
-        System.out.println(ranNumber);
+        int ranNumber = (int) (Math.random() * 500)+1;
+        //System.out.println(ranNumber);
         int guessNum;
         int noOfAtt=0;
         Scanner scan = new Scanner(System.in);
         do {
-            System.out.println("Guess the random number: ");
+            System.out.println("Guess the random number (between 1 to 500): ");
             guessNum = scan.nextInt();
             noOfAtt++;
             if(guessNum > ranNumber) {
@@ -133,8 +134,6 @@ public class Exercise {
             }
         }
         while(guessNum != ranNumber);
-        if(guessNum == ranNumber) {
-            System.out.println("Your guess is correct on " +noOfAtt+ " attempt.");
-        }
+        System.out.println("Your guess is correct on " +noOfAtt+ " attempt.");
     }
 }
