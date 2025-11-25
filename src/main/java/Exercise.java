@@ -10,16 +10,18 @@ public class Exercise {
         System.out.println("Hello");
         System.out.println("Sangeetha!");
 
-        leapYear();    //Exercise 2
+        findLeapYear();    //Exercise 2
 
         arithmeticOperations();     //Exercise 3
 
+        findAverage();      //Exercise 4
 
+        getAndDisplayUserName();    //Exercise 5
     }
     /*
     Exercise 2: Get a year as input and print if is a leap year or not.
      */
-    public static void leapYear(){
+    public static void findLeapYear(){
          System.out.println("Enter the year: ");
          Scanner scanner = new Scanner(System.in);
          int year = scanner.nextInt();
@@ -40,5 +42,32 @@ public class Exercise {
         System.out.println("Subtraction of 56-13 = "+(56-13));
         System.out.println("Multiplication of 13*5 = "+(13*5));
         System.out.println("Division of 25/7 = "+(25/7));
+    }
+
+    /*
+    Exercise 4: Print the average of three numbers
+     */
+    public static void findAverage() {
+        int a = 27;
+        int b = 56;
+        int c = 12;
+        int sum, average;
+
+        sum = a+b+c;
+        average = sum / 3;
+
+        System.out.println("The average of "+a+","+b+" and "+c+" is "+average);
+
+    }
+
+    /*
+    Exercise 5: Get the name from the user and print Hello username.
+     */
+    public static void getAndDisplayUserName() {
+
+        System.out.println("Enter the username: ");
+        Scanner scan = new Scanner(System.in);
+        String userName = scan.next();
+        System.out.println("Hello "+userName);
     }
 }
