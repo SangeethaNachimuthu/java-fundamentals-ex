@@ -1,3 +1,5 @@
+package part1;
+
 import java.util.Scanner;
 
 public class Exercise {
@@ -5,27 +7,27 @@ public class Exercise {
     public static void main(String[] args) {
 
         /*
-        Exercise 1: Print Hello and Name.
+        part1.Exercise 1: Print Hello and Name.
         * */
         System.out.println("Hello");
         System.out.println("Sangeetha!");
 
-        findLeapYear();    //Exercise 2
+        findLeapYear();    //part1.Exercise 2
 
-        arithmeticOperations();     //Exercise 3
+        arithmeticOperations();     //part1.Exercise 3
 
-        findAverage();      //Exercise 4
+        findAverage();      //part1.Exercise 4
 
-        getAndDisplayUserName();    //Exercise 5
+        getAndDisplayUserName();    //part1.Exercise 5
 
-        performArithmeticOperations();  //Exercise 6
+        performArithmeticOperations();  //part1.Exercise 6
 
-        convertToSeconds();     //Exercise 7
+        convertToSeconds();     //part1.Exercise 7
 
-        generateRandomNo();     //Exercise 8
+        generateRandomNo();     //part1.Exercise 8
     }
     /*
-    Exercise 2: Get a year as input and print if is a leap year or not.
+    part1.Exercise 2: Get a year as input and print if is a leap year or not.
      */
     public static void findLeapYear(){
          System.out.println("Enter the year: ");
@@ -41,7 +43,7 @@ public class Exercise {
     }
 
     /*
-    Exercise 3: Arithmetic Operations
+    part1.Exercise 3: Arithmetic Operations
      */
     public static void arithmeticOperations(){
         System.out.println("Arithmetic Operations:");
@@ -52,7 +54,7 @@ public class Exercise {
     }
 
     /*
-    Exercise 4: Print the average of three numbers
+    part1.Exercise 4: Print the average of three numbers
      */
     public static void findAverage() {
         int a = 27;
@@ -68,7 +70,7 @@ public class Exercise {
     }
 
     /*
-    Exercise 5: Get the name from the user and print Hello username.
+    part1.Exercise 5: Get the name from the user and print Hello username.
      */
     public static void getAndDisplayUserName() {
 
@@ -79,7 +81,7 @@ public class Exercise {
     }
 
     /*
-    Exercise 6: Get 2 inputs from user and perform Arithmetic Operations
+    part1.Exercise 6: Get 2 inputs from user and perform Arithmetic Operations
      */
     public static void performArithmeticOperations() {
 
@@ -96,7 +98,7 @@ public class Exercise {
     }
 
     /*
-    Exercise 7: Convert seconds to hours, minutes and seconds
+    part1.Exercise 7: Convert seconds to hours, minutes and seconds
      */
     public static void convertToSeconds() {
         Scanner scan = new Scanner(System.in);
@@ -112,7 +114,7 @@ public class Exercise {
     }
 
     /*
-    Exercise 8: Generate random number, let the user guess the number,
+    part1.Exercise 8: Generate random number, let the user guess the number,
         run the program until the correct guess and print the no of attempt
         with correct guess message. Also display 'Guess is small / big' message
         based on the random number.
